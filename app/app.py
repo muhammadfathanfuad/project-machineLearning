@@ -31,7 +31,7 @@ st.markdown("""
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     </style>
-    """, unsafe_allow_stdio=True)
+    """, unsafe_allow_html=True) # <-- SUDAH DIPERBAIKI
 
 # Fungsi Load Model & Scaler
 @st.cache_resource
@@ -94,7 +94,7 @@ with col2:
         prediction = model.predict(features_scaled)[0]
         
         # Tampilan Hasil yang Interaktif
-        st.markdown('<div class="result-card">', unsafe_allow_stdio=True)
+        st.markdown('<div class="result-card">', unsafe_allow_html=True)
         if prediction == "High": # Sesuaikan dengan label di dataset Anda
             st.error(f"### 🚨 RISIKO TINGGI")
             st.write("Sistem mendeteksi indikasi burnout yang signifikan. Disarankan untuk segera mengambil istirahat.")
@@ -104,7 +104,7 @@ with col2:
         else:
             st.success(f"### ✅ RISIKO RENDAH")
             st.write("Kondisi Anda terpantau stabil. Tetap jaga pola kerja yang sehat!")
-        st.markdown('</div>', unsafe_allow_stdio=True)
+        st.markdown('</div>', unsafe_allow_html=True)
     else:
         st.info("Klik tombol di sidebar untuk melihat hasil prediksi.")
 
