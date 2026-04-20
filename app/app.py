@@ -38,7 +38,7 @@ st.markdown("""
 def load_assets():
     with open('models/burnout_svm_model.pkl', 'rb') as f:
         model = pickle.load(f)
-    with open('models/caler.pkl', 'rb') as f:
+    with open('models/scaler.pkl', 'rb') as f:
         scaler = pickle.load(f)
     return model, scaler
 
