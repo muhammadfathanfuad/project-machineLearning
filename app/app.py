@@ -20,9 +20,9 @@ berdasarkan faktor gaya hidup dan lingkungan kerja.
 # --- FUNGSI LOAD MODEL ---
 @st.cache_resource
 def load_assets():
-    with open('burnout_svm_model.pkl', 'rb') as f:
+    with open('models/burnout_svm_model.pkl', 'rb') as f:
         model = pickle.load(f)
-    with open('scaler.pkl', 'rb') as f:
+    with open('models/scaler.pkl', 'rb') as f:
         scaler = pickle.load(f)
     return model, scaler
 
