@@ -9,7 +9,7 @@ Aplikasi web interaktif berbasis Machine Learning untuk memprediksi tingkat risi
 
 ## 🌐 Live Deployment
 Aplikasi ini telah dideploy dan dapat diakses secara publik melalui tautan berikut:
-🔗 **[Burnout Predictor - Streamlit Cloud](https://link-app-anda.streamlit.app/)**
+🔗 **[Burnout Predictor - Streamlit Cloud](https://project-machinelearning-cfexjr3utsziicrpiydaqj.streamlit.app/)**
 
 ## 🚀 Fitur Utama
 * **Prediksi Akurat:** Didukung oleh model SVM dengan akurasi pengujian mencapai **99.25%** (Skenario data split 80:20).
